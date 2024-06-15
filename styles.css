@@ -59,7 +59,7 @@ nav {
     position: sticky;
     top: 0;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-    z-index: 9;
+    z-index: 20;
 
 }
 
@@ -190,6 +190,21 @@ main {
         width: 60%;
         height: 300px;
     }
+    .contact-button {
+        background-color: transparent;
+        color: white;
+        font-size: 14px;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 8px 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: ease .4s;
+        z-index: 8;
+    }
+    
 }
 
 .profile-set {
@@ -360,7 +375,6 @@ main {
     text-align: center;
     padding: 40px;
     pointer-events: none;
-
 }
 
 .card:hover .description {
@@ -371,7 +385,14 @@ main {
 
 .skills-container {
     padding: 20px 0;
-    margin: 0 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.skill-set {
+    margin: 20px;
 }
 
 .skill-set p {
