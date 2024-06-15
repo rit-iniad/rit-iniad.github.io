@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="typing-1"></div>
+    </div>
+    <header>
+        <h1>Skill</h1>
+        <a href="https://github.com/rit-iniad" style="text-decoration:none;" class="contact-button"><i class="bi bi-github"></i> CONTACT</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="profile.html"><i class="bi bi-person-fill"></i> Profile</a></li>
+            <li><a href="production.html"><i class="bi bi-pencil-fill"></i> Production</a></li>
+            <li><a href="skill.html"><i class="bi bi-star-fill"></i> Skill</a></li>
+        </ul>
+    </nav>
+    <main class="container-fluid skill-main">
+        <div class="skills-container">
+            <div class="row">
+                <div class="skill-set col-lg-3 col-md-4 col-sm-6 col-6 text-center mb-4">
+                    <img src="logo/HTML_logo.svg" alt="HTML Logo" class="skill-logo">
+                    <p>
+                        HTML<br>
+                        ★★★
+                    </p>
+                </div>
+                <div class="skill-set col-lg-3 col-md-4 col-sm-6 col-6 text-center mb-4">
+                    <img src="logo/CSS_logo.svg" alt="CSS Logo" class="skill-logo">
+                    <p>
+                        CSS<br>
+                        ★★★
+                    </p>
+                </div>
+                <div class="skill-set col-lg-3 col-md-4 col-sm-6 col-6 text-center mb-4">
+                    <img src="logo/JavaScript_logo.svg" alt="JavaScript Logo" class="skill-logo">
+                    <p>
+                        JavaScript<br>
+                        ★★☆
+                    </p>
+                </div>
+                <div class="skill-set col-lg-3 col-md-4 col-sm-6 col-6 text-center mb-4">
+                    <img src="logo/Python-logo.svg" alt="Python Logo" class="skill-logo">
+                    <p>
+                        Python<br>
+                        ★★☆
+                    </p>
+                </div>
+                <div class="skill-set col-lg-3 col-md-4 col-sm-6 col-6 text-center mb-4">
+                    <img src="logo/Java-logo.svg" alt="Java Logo" class="skill-logo">
+                    <p>
+                        Java<br>
+                        ★☆☆
+                    </p>
+                </div>
+                <div class="skill-set col-lg-3 col-md-4 col-sm-6 col-6 text-center mb-4">
+                    <img src="logo/Django-logo.svg" alt="Django Logo" class="skill-logo">
+                    <p>
+                        Django<br>
+                        ★☆☆
+                    </p>
+                </div>
+                <div class="skill-set col-lg-3 col-md-4 col-sm-6 col-6 text-center mb-4">
+                    <img src="logo/react-logo.svg" alt="React Logo" class="skill-logo">
+                    <p>
+                        React<br>
+                        ★☆☆
+                    </p>
+                </div>
+                <div class="skill-set col-lg-3 col-md-4 col-sm-6 col-6 text-center mb-4">
+                    <img src="logo/Figma-Icon.svg" alt="Figma Logo" class="skill-logo">
+                    <p>
+                        Figma<br>
+                        ★★☆
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="home">
+            <a href="index.html"><i class="bi bi-arrow-left-circle-fill"></i>　HOME</a>
+        </div>
+    </main>
+    <script>
+        const loading = document.getElementById('loading');
+
+        window.onload = function() {
+            loading.classList.add('loaded')
+        }
+    </script>
+</body>
+</html>

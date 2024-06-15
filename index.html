@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="typing-1"></div>
+    </div>
+    <div class="area" >
+        
+        <header>
+            <h1>Portfolio</h1>
+            <a href="https://github.com/rit-iniad" style="text-decoration:none;" class="contact-button"><i class="bi bi-github"></i> CONTACT</a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="profile.html"><i class="bi bi-person-fill"></i> Profile</a></li>
+                <li><a href="production.html"><i class="bi bi-pencil-fill"></i> Production</a></li>
+                <li><a href="skill.html"><i class="bi bi-star-fill"></i> Skill</a></li>
+            </ul>
+        </nav>
+
+
+        <main class="container-fluid">
+            <div class="content">
+                <div class="row">
+                    <div class="homecard-set">
+                        <div class="homecard col-md-4">
+                            <a href="profile.html"><img src="img/profile-image.jpg" alt="Profile"></a>
+                            <a href="profile.html" class="link">Profile</a>
+                        </div>
+                        <div class="homecard col-md-4">
+                            <a href="production.html"><img src="img/production-image.jpg" alt="Production"></a>
+                            <a href="production.html" class="link">Production</a>
+                        </div>
+                        <div class="homecard col-md-4">
+                            <a href="skill.html"><img src="img/skill-image.jpg" alt="Skill"></a>
+                            <a href="skill.html" class="link">Skill</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+    <script>
+        const loading = document.getElementById('loading');
+
+        window.onload = function() {
+            loading.classList.add('loaded')
+        }
+    </script>
+</body>
+</html>

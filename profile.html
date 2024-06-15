@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="typing-1"></div>
+    </div>
+    <header>
+        <h1>Profile</h1>
+        <a href="https://github.com/rit-iniad" style="text-decoration:none;" class="contact-button"><i class="bi bi-github"></i> CONTACT</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="profile.html"><i class="bi bi-person-fill"></i> Profile</a></li>
+            <li><a href="production.html"><i class="bi bi-pencil-fill"></i> Production</a></li>
+            <li><a href="skill.html"><i class="bi bi-star-fill"></i> Skill</a></li>
+        </ul>
+    </nav>
+    <main class="container-fluid">
+            <div class="profile-set">
+                <div class="id-photo proma">
+                    <img src="img/photo-image.jpg" alt="id-photo">
+                </div>
+                <div class="profile proma">
+                    <h2>村 野　塁 十</h2>
+                    <p>Ruito Murano</p>
+                    <p>東洋大学 情報連携学部 情報連携学科 ３年<br>
+                    コンピュータ・ソフトウェア / ユーザ・エクスペリエンス科目 専攻<br><br>
+                    趣味：　　　絵を描く / Webデザイン / 読書<br>
+                    ひとこと：　目標に向かって突き進むのが好きです！
+                    </p>
+                </div>
+            </div>
+            <div class="home">
+                <a href="index.html"><i class="bi bi-arrow-left-circle-fill"></i>　HOME</a>
+            </div>
+    </main>
+    <script>
+        const loading = document.getElementById('loading');
+
+        window.onload = function() {
+            loading.classList.add('loaded')
+        }
+    </script>
+</body>
+</html>
