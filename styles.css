@@ -185,7 +185,7 @@ main {
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 924px) {
     .homecard {
         width: 60%;
         height: 300px;
@@ -203,6 +203,9 @@ main {
         right: 30px;
         transition: ease .4s;
         z-index: 8;
+    }
+    .proma {
+        width: 300px;
     }
     
 }
@@ -229,8 +232,8 @@ main {
 }
 
 .id-photo img {
-    width: 350px;
-    aspect-ratio: 4/3;
+    width: 300px;
+    aspect-ratio: 1/1;
     display: block;
     border-radius: 5px;
     object-fit: cover;
@@ -384,20 +387,17 @@ main {
 
 
 .skills-container {
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-.skill-set {
-    margin: 20px;
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(160px, 1fr))
+    ;
+    margin: 30px;
 }
 
 .skill-set p {
     font-size: 17px;
     font-family: 'Noto Sans JP', sans-serif;
+    pointer-events: none;
 }
 
 .skill-logo {
@@ -405,6 +405,19 @@ main {
     height: 100px;
     object-fit: contain;
     margin-bottom: 5px;
+}
+
+.text {
+    background-color: #acc4cb;
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.text p {
+    font-size: 15px;
+    
 }
 
 
