@@ -100,14 +100,7 @@
                     description.style.opacity = '1';
                 }
             });
-        });
-
-        // スマートフォン用のデフォルトのタップ処理を防止
-        document.addEventListener('touchstart', function(event) {
-            if (event.target.closest('.card')) {
-                event.preventDefault();
-            }
-        }, { passive: false });
+        });        
     });
     </script>
 </body>
