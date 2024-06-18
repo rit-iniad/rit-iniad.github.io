@@ -25,7 +25,7 @@
     </nav>
     <main class="container-fluid">
         <div class="card-explain">
-            <p>気になる作品にカーソルを当ててみて！</p>
+            <p>気になる作品をクリックorタップしてみて！</p>
         </div>
         <div class="card-contents">
             <div class="card production1">
@@ -87,6 +87,28 @@
         window.onload = function() {
             loading.classList.add('loaded')
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            card.addEventListener('click', function() {
+                const description = this.querySelector('.description');
+                if (description.style.opacity == '1') {
+                    description.style.opacity = '0';
+                } else {
+                    description.style.opacity = '1';
+                }
+            });
+        });
+
+        // スマートフォン用のデフォルトのタップ処理を防止
+        document.addEventListener('touchstart', function(event) {
+            if (event.target.closest('.card')) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+    });
     </script>
 </body>
 </html>

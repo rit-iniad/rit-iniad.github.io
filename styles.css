@@ -360,6 +360,10 @@ main {
     background-size: 370px;
 
 }
+.production9 {
+    background-color: #acc4cb;
+    color: #fff;
+}
 
 
 .card .description {
@@ -377,34 +381,32 @@ main {
     transition: opacity 0.3s ease-in-out; /* なめらかな表示・非表示 */
     text-align: center;
     padding: 40px;
+}
+
+.card p {
     pointer-events: none;
+
 }
-
-.card:hover .description {
-    opacity: 1;
-}
-
-
 
 .skills-container {
     display: grid;
     grid-template-columns:
         repeat(auto-fit, minmax(160px, 1fr))
     ;
-    margin: 30px;
+    margin-top: 30px;
 }
 
 .skill-set p {
-    font-size: 17px;
+    font-size: 15px;
     font-family: 'Noto Sans JP', sans-serif;
     pointer-events: none;
 }
 
 .skill-logo {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .text {
