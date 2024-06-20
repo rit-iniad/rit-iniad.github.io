@@ -1,31 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hannari&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     color: #565759;
-    background-color: #e0ddd0;
+    background-color: #ebedeb;
 }
 
 
 
 header {
-    background-color: #1d2b58;
-    height: 200px;
+    background: #ebedeb;
+    background: linear-gradient(0deg, #ebedeb 0%, #b3c6c8 38%, #7399a0 100%);
+    height: 250px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: column;
+}
+
+.homeheader {
+    height: 100vh;
+    
 }
 
 header h1 {
-    color: #e2d7ad;
+    color: #ebedeb;
     font-size: 50px;
     font-weight: 800;
     margin: 0;
-    pointer-events: none;
+    font-family: "Cormorant", serif;
+    font-weight: 700;
+}
+
+header p {
+    color: #ebedeb;
+    font-size: 15px;
+    margin: 0;
+    font-family: "Cormorant", serif;
 }
 
 .header a {
@@ -34,9 +51,9 @@ header h1 {
 
 .contact-button {
     background-color: transparent;
-    color: white;
+    color: #ebedeb;
     font-size: 14px;
-    border: 1px solid white;
+    border: 1px solid #ebedeb;
     border-radius: 5px;
     padding: 8px 20px;
     cursor: pointer;
@@ -48,17 +65,14 @@ header h1 {
 }
 
 .contact-button:hover {
-    background-color: #fff;
-    color: #1d2b58;
+    background-color: #ebedeb;
+    color: #7399a0;
 }
 
 nav {
-    background-color: #e2d7ad;
     text-align: center;
-    padding: 25px 0;
-    position: sticky;
+    padding-top: 20px;
     top: 0;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
     z-index: 20;
 
 }
@@ -68,7 +82,6 @@ nav ul {
     pointer-events: none;
     padding: 0;
     margin: 0;
-    
 }
 
 nav ul li {
@@ -79,10 +92,10 @@ nav ul li {
 }
 
 nav ul li::before {
-    background: #1d2b58;
+    background: #7399a0;
     content: '';
     width: 100%;
-    height: 2px;
+    height: 1px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -99,9 +112,9 @@ nav ul li::before {
 nav ul li a {
     pointer-events: all;
     text-decoration: none;
-    color: #1d2b58;
-    font-weight: bold;
-    font-family: 'Noto Sans JP', sans-serif;
+    color: #7399a0;
+    font-family: "Cormorant", serif;
+    font-size: 15px;
 }
 
 
@@ -109,18 +122,18 @@ nav ul li a {
     align-items: center;
     position: fixed;
     overflow: hidden;
-    bottom: 25px;
-    right: 20px;
-    z-index: 7;
+    bottom: 15px;
+    right: 15px;
+    z-index: 30;
 }
 .home a {
     background-color: transparent;
     text-decoration: none;
-    color: #1d2b58;
-    border: 2px solid #1d2b58;
+    color: #7399a0;
+    border: 1px solid #7399a0;
     border-radius: 20px;
     padding: 5px 25px 5px 10px;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'Noto Sans JP', sans-serif;
     display: inline-block;
     transition: ease .4s;
@@ -128,7 +141,7 @@ nav ul li a {
 
 .home a:hover {
     color: #fff;
-    background-color: #1d2b58;
+    background-color: #7399a0;
 } 
 
 
@@ -183,6 +196,7 @@ main {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+    font-family: "Cormorant", serif;
 }
 
 @media (max-width: 924px) {
@@ -207,6 +221,9 @@ main {
     .proma {
         width: 300px;
     }
+    .profile p {
+        font-size: 14px;
+    }
     
 }
 
@@ -217,18 +234,23 @@ main {
 }
 
 .profile {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Hannari', serif;
     align-items: center;
     justify-content: center;
 }
 
 .proma {
-    margin: 30px;
+    margin: 0 30px;
+    margin-top: 10px;
 }
 
 .profile h2 {
     font-size: 30px;
     font-weight: bold;
+}
+
+.profile p {
+    margin: 0;
 }
 
 .id-photo img {
@@ -237,7 +259,7 @@ main {
     display: block;
     border-radius: 5px;
     object-fit: cover;
-    filter: grayscale(80%);
+    filter: grayscale(60%);
 }
 
 #loading {
@@ -296,7 +318,7 @@ main {
   }
 
 .card-explain {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Hannari', serif;
     text-align: center;
     margin-top: 10px;
     pointer-events: none;
@@ -391,44 +413,28 @@ main {
 .skills-container {
     display: grid;
     grid-template-columns:
-        repeat(auto-fit, minmax(160px, 1fr))
+        repeat(auto-fit, minmax(120px, 1fr))
     ;
-    margin-top: 30px;
+    margin: 40px 50px;
 }
 
 .skill-set p {
-    font-size: 15px;
+    font-size: 13px;
     font-family: 'Noto Sans JP', sans-serif;
     pointer-events: none;
 }
 
 .skill-logo {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
     margin-bottom: 3px;
 }
 
-.text {
-    background-color: #acc4cb;
-    color: #fff;
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-}
-.text p {
-    font-size: 15px;
-    
-}
-
-
 .area{
-    background: #e0ddd0;
+    background: #dbdfdf;
     width: 100%;
     height:100vh;
-    
-   
 }
 
 .circles{
@@ -545,4 +551,18 @@ main {
         border-radius: 50%;
     }
 
+}
+
+footer {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #acaaaa;
+    font-size: small;
+    font-family: "Cormorant", serif;
+    margin: 0;
 }
