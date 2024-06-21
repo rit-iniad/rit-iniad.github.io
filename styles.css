@@ -32,10 +32,10 @@ header {
 header h1 {
     color: #ebedeb;
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 700;
     margin: 0;
     font-family: "Cormorant", serif;
-    font-weight: 700;
+    pointer-events: none;
 }
 
 header p {
@@ -59,7 +59,7 @@ header p {
     cursor: pointer;
     position: absolute;
     top: 20px;
-    right: 50px;
+    right: 70px;
     transition: ease .4s;
     z-index: 8;
 }
@@ -69,11 +69,71 @@ header p {
     color: #7399a0;
 }
 
+.burger {
+    height: 38px;
+    width: 38px;
+    background-image: url(img/burger.svg);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 50;
+    transition: 0.2s ease-in-out;
+    position: fixed;
+}
+
+.burger.is-active {
+    background-image: url(img/close.svg);
+    position: fixed;
+}
+
+.menu {
+    font-family: "Cormorant", serif;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #252d2edd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    display: none;
+    overflow: hidden;
+
+}
+.menu.is-active {
+    display: flex;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 40px 0;
+}
+
+.menu ul li a {
+    pointer-events: all;
+    text-decoration: none;
+    color: #ebedeb;
+
+}
+
 nav {
     text-align: center;
     padding-top: 20px;
     top: 0;
     z-index: 20;
+    margin-bottom: 1px;
 
 }
 
@@ -87,7 +147,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 20px;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     position: relative;
 }
 
@@ -214,7 +274,7 @@ main {
         cursor: pointer;
         position: absolute;
         top: 20px;
-        right: 30px;
+        right: 70px;
         transition: ease .4s;
         z-index: 8;
     }
@@ -251,6 +311,8 @@ main {
 
 .profile p {
     margin: 0;
+    text-wrap: balance;
+    word-break: auto-phrase;
 }
 
 .id-photo img {
@@ -407,7 +469,7 @@ main {
 
 .card p {
     pointer-events: none;
-
+    text-wrap: balance;
 }
 
 .skills-container {

@@ -18,6 +18,15 @@
             <h1>Portfolio</h1>
             <p>forge ahead towards my goal</p>
             <a href="https://github.com/rit-iniad" style="text-decoration:none;" class="contact-button"><i class="bi bi-github"></i> GitHub</a>
+            <div class="burger"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">About</a></li>
+                    <li><a href="production.html">Works</a></li>
+                    <li><a href="skill.html">Skill</a></li>
+                </ul>
+            </div>
         </header>
         
 
@@ -77,5 +86,19 @@
             loading.classList.add('loaded')
         }
     </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(".burger").click(function() {
+            $(".burger").toggleClass("is-active");
+            $(".menu").toggleClass("is-active");
+        });
+    </script>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: false, distance: "60px", duration: 1000 });
+        ScrollReveal().reveal('.homecard', { delay: 100, origin: "top", interval: 100 });
+    </script>
+    
 </body>
 </html>

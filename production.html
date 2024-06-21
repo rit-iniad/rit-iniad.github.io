@@ -15,15 +15,24 @@
     <header>
         <h1>Works</h1>
         <a href="https://github.com/rit-iniad" style="text-decoration:none;" class="contact-button"><i class="bi bi-github"></i> GitHub</a>
+        <div class="burger"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">About</a></li>
+                <li><a href="production.html">Works</a></li>
+                <li><a href="skill.html">Skill</a></li>
+            </ul>
+        </div>
     </header>
     <main class="container-fluid">
         <div class="card-explain">
-            <p>気になる作品をクリックorタップしてみて！</p>
+            <p>気になる作品をクリックorタップしてください</p>
         </div>
         <div class="card-contents">
             <div class="card production1">
                 <p class="description">
-                    第２回東洋大学ライフデザイン学部大学祭のウェブサイトです。大学祭実行委員システム部１年生４人で<br>チーム開発を行いました。
+                    第２回東洋大学ライフデザイン学部大学祭のウェブサイトです。大学祭実行委員システム部１年生４人でチーム開発を行いました。
                 </p>
             </div>
             <div class="card production2">
@@ -38,27 +47,27 @@
             </div>
             <div class="card production4">
                 <p class="description">
-                    OpenWeatherMapのAPIを利用し、天気予報サイトを制作しました。朝の忙しい時間帯に使えるよう<br>意識してUI設計しました。
+                    OpenWeatherMapのAPIを利用し、天気予報サイトを制作しました。朝の忙しい時間帯に使えるよう意識してUI設計しました。
                 </p>
             </div>
             <div class="card production5">
                 <p class="description">
-                    OpenCVでモンゴルの国旗を描きました。複雑な模様の部分を忠実に再現する<br>ことが難しかったです...。
+                    OpenCVでモンゴルの国旗を描きました。複雑な模様の部分を忠実に再現することが難しかったです...。
                 </p>
             </div>
             <div class="card production6">
                 <p class="description">
-                    初めてのウェブサイト制作です。"ﾂｲﾂｲ"はついつい<br>食べたくなる・投稿したくなる(旧Twitter)という<br>ダブルミーニングで付けました。パスタはチームメンバーで作ったもので、<br>とてもおいしかったです。
+                    初めてのウェブサイト制作です。"ﾂｲﾂｲ"はついつい食べたくなる・投稿したくなる(旧Twitter)というダブルミーニングで付けました。パスタはチームメンバーで作ったもので、<br>とてもおいしかったです。
                 </p>
             </div>
             <div class="card production7">
                 <p class="description">
-                    ３人でガチャアプリケーションを制作しました。<br>イニアドモンスター通称<br>イニモンは、画像生成AIで生まれました。レア度を<br>表す★がキラキラしていてお気に入りです。
+                    ３人でガチャアプリケーションを制作しました。イニアドモンスター通称イニモンは、画像生成AIで生まれました。レア度を表す★がキラキラしていてお気に入りです。
                 </p>
             </div>
             <div class="card production8">
                 <p class="description">
-                    ３人でウェブアプリケーション開発をしました。キーボード操作でユーザーが移動、仮想空間でチャットができます。カクカク移動<br>するため、"KaKu²Chat"<br>と名付けました。
+                    ３人でウェブアプリケーション開発をしました。キーボード操作でユーザーが移動、仮想空間でチャットができます。カクカク移動するため、"KaKu²Chat"と名付けました。
                 </p>
             </div>
             <div class="card production9">
@@ -105,6 +114,13 @@
             });
         });        
     });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(".burger").click(function() {
+            $(".burger").toggleClass("is-active");
+            $(".menu").toggleClass("is-active");
+        });
     </script>
 </body>
 </html>
