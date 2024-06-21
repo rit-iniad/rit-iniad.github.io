@@ -473,17 +473,50 @@ main {
 }
 
 .skills-container {
-    display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(120px, 1fr))
-    ;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     margin: 40px 50px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.336);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.category-title {
+    font-size: 20px;
+    font-family: 'Hannari', serif;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #565759;
+}
+
+.skill-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.skill-set {
+    text-align: center;
 }
 
 .skill-set p {
     font-size: 13px;
     font-family: 'Noto Sans JP', sans-serif;
     pointer-events: none;
+    color: #565759;
 }
 
 .skill-logo {

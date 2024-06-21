@@ -27,82 +27,85 @@
     </header>
     <main class="container-fluid skill-main">
         <div class="skills-container">
-                <div class="skill-set text-center">
-                    <img src="logo/HTML_logo.svg" alt="HTML Logo" class="skill-logo">
-                    <p>
-                        HTML<br>
-                        ★★★
-                    </p>
+    
+            <!-- Frontend Skills -->
+            <div class="category">
+                <h2 class="category-title">フロントエンド</h2>
+                <div class="skill-row">
+                    <div class="skill-set text-center">
+                        <img src="logo/HTML_logo.svg" alt="HTML Logo" class="skill-logo">
+                        <p>HTML<br>★★★</p>
+                    </div>
+                    <div class="skill-set text-center">
+                        <img src="logo/CSS_logo.svg" alt="CSS Logo" class="skill-logo">
+                        <p>CSS<br>★★★</p>
+                    </div>
+                    <div class="skill-set text-center">
+                        <img src="logo/JavaScript_logo.svg" alt="JavaScript Logo" class="skill-logo">
+                        <p>JavaScript<br>★★☆</p>
+                    </div>
+                    <div class="skill-set text-center">
+                        <img src="logo/Bootstrap-logo.svg" alt="Bootstrap Logo" class="skill-logo">
+                        <p>Bootstrap<br>★★☆</p>
+                    </div>
+                    <div class="skill-set text-center">
+                        <img src="logo/react-logo.svg" alt="React Logo" class="skill-logo">
+                        <p>React<br>★☆☆</p>
+                    </div>
+                    <div class="skill-set text-center">
+                        <img src="logo/Figma-Icon.svg" alt="Figma Logo" class="skill-logo">
+                        <p>Figma<br>★★☆</p>
+                    </div>
                 </div>
-                <div class="skill-set text-center">
-                    <img src="logo/CSS_logo.svg" alt="CSS Logo" class="skill-logo">
-                    <p>
-                        CSS<br>
-                        ★★★
-                    </p>
-                </div>
-                <div class="skill-set text-center">
-                    <img src="logo/JavaScript_logo.svg" alt="JavaScript Logo" class="skill-logo">
-                    <p>
-                        JavaScript<br>
-                        ★★☆
-                    </p>
-                </div>
-                <div class="skill-set text-center">
-                    <img src="logo/Python-logo.svg" alt="Python Logo" class="skill-logo">
-                    <p>
-                        Python<br>
-                        ★★☆
-                    </p>
-                </div>
-                <div class="skill-set text-center">
-                    <img src="logo/Java-logo.svg" alt="Java Logo" class="skill-logo">
-                    <p>
-                        Java<br>
-                        ★☆☆
-                    </p>
-                </div>
-                <div class="skill-set text-center">
-                    <img src="logo/SQLite-logo.svg" alt="Java Logo" class="skill-logo">
-                    <p>
-                        SQLite<br>
-                        ★☆☆
-                    </p>
-                </div>
-                <div class="skill-set text-center">
-                    <img src="logo/Django-logo.svg" alt="Django Logo" class="skill-logo">
-                    <p>
-                        Django<br>
-                        ★☆☆
-                    </p>
-                </div>
-                <div class="skill-set text-center">
-                    <img src="logo/Bootstrap-logo.svg" alt="Bootstrap Logo" class="skill-logo">
-                    <p>
-                        Bootstrap<br>
-                        ★★☆
-                    </p>
-                </div>
-                <div class="skill-set text-center">
-                    <img src="logo/react-logo.svg" alt="React Logo" class="skill-logo">
-                    <p>
-                        React<br>
-                        ★☆☆
-                    </p>
-                </div>
-                <div class="skill-set text-center">
-                    <img src="logo/Figma-Icon.svg" alt="Figma Logo" class="skill-logo">
-                    <p>
-                        Figma<br>
-                        ★★☆
-                    </p>
-                </div>
-
             </div>
+    
+            <!-- Backend Skills -->
+            <div class="category">
+                <h2 class="category-title">バックエンド</h2>
+                <div class="skill-row">
+                    <div class="skill-set text-center">
+                        <img src="logo/Python-logo.svg" alt="Python Logo" class="skill-logo">
+                        <p>Python<br>★★☆</p>
+                    </div>
+                    <div class="skill-set text-center">
+                        <img src="logo/Java-logo.svg" alt="Java Logo" class="skill-logo">
+                        <p>Java<br>★☆☆</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Frameworks -->
+            <div class="category">
+                <h2 class="category-title">フレームワーク</h2>
+                <div class="skill-row">
+                    <div class="skill-set text-center">
+                        <img src="logo/Django-logo.svg" alt="Django Logo" class="skill-logo">
+                        <p>Django<br>★☆☆</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Database -->
+            <div class="category">
+                <h2 class="category-title">データベース</h2>
+                <div class="skill-row">
+                    <div class="skill-set text-center">
+                        <img src="logo/SQLite-logo.svg" alt="SQLite Logo" class="skill-logo">
+                        <p>SQLite<br>★☆☆</p>
+                    </div>
+                    <div class="skill-set text-center">
+                        <img src="logo/MongoDB_logo.svg" alt="MongoDB Logo" class="skill-logo">
+                        <p>MongoDB<br>★☆☆</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
         <div class="home">
             <a href="index.html"><i class="bi bi-arrow-left-circle-fill"></i>　HOME</a>
         </div>
     </main>
+    
     <nav>
         <ul>
             <li><a href="profile.html"><i class="bi bi-person-fill"></i> About</a></li>
@@ -129,8 +132,8 @@
     </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        ScrollReveal({ reset: false, distance: "60px", duration: 1000 });
-        ScrollReveal().reveal('.skill-set', { delay: 500, origin: "bottom"});
+        ScrollReveal({ reset: true, distance: "40px", duration: 1000 });
+        ScrollReveal().reveal('.skill-row', { delay: 500, origin: "bottom"});
     </script>
 </body>
 </html>
