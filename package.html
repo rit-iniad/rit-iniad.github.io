@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="typing-1"></div>
+    </div>
+    <header>
+        <p class="subtitle">技 術</p>
+        <h1>Works</h1>
+        <a href="https://github.com/rit-iniad" style="text-decoration:none;" class="contact-button"><i class="bi bi-github"></i> GitHub</a>
+        <div class="burger"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">About</a></li>
+                <li><a href="production.html">Works</a></li>
+                <li><a href="skill.html">Skill</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container-fluid">
+        <div class="package">
+            <img src="package/image1.jpg" alt="image1">
+            <img src="package/image2.jpg" alt="image2">
+            <img src="package/image3.jpg" alt="image3">
+            <img src="package/image4.jpg" alt="image4">
+            <img src="package/image5.jpg" alt="image5">
+        </div>
+        <div class="home">
+            <a href="index.html"><i class="bi bi-arrow-left-circle-fill"></i>　HOME</a>
+        </div>
+    </main>
+    
+    <nav>
+        <ul>
+            <li><a href="profile.html"><i class="bi bi-person-fill"></i> About</a></li>
+            <li><a href="production.html"><i class="bi bi-pencil-fill"></i> Works</a></li>
+            <li><a href="skill.html"><i class="bi bi-star-fill"></i> Skill</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>2024 ruito's portfolio .</p>
+    </footer>
+    <script>
+        const loading = document.getElementById('loading');
+
+        window.onload = function() {
+            loading.classList.add('loaded')
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(".burger").click(function() {
+            $(".burger").toggleClass("is-active");
+            $(".menu").toggleClass("is-active");
+        });
+    </script>
+</body>
+</html>

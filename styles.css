@@ -26,7 +26,6 @@ header {
 
 .homeheader {
     height: 100vh;
-    
 }
 
 header h1 {
@@ -38,11 +37,19 @@ header h1 {
     pointer-events: none;
 }
 
-header p {
+header .index-subtitle {
     color: #ebedeb;
     font-size: 15px;
     margin: 0;
     font-family: "Cormorant", serif;
+}
+
+header .subtitle {
+    color: #ebedeb;
+    font-size: 12px;
+    margin: 0;
+    font-family: "Cormorant", serif;
+    pointer-events: none;
 }
 
 .header a {
@@ -119,13 +126,14 @@ header p {
 
 .menu ul li {
     margin: 40px 0;
+    text-align: center;
+
 }
 
 .menu ul li a {
     pointer-events: all;
     text-decoration: none;
     color: #ebedeb;
-
 }
 
 nav {
@@ -259,33 +267,7 @@ main {
     font-family: "Cormorant", serif;
 }
 
-@media (max-width: 924px) {
-    .homecard {
-        width: 60%;
-        height: 300px;
-    }
-    .contact-button {
-        background-color: transparent;
-        color: white;
-        font-size: 14px;
-        border: 1px solid white;
-        border-radius: 5px;
-        padding: 8px 20px;
-        cursor: pointer;
-        position: absolute;
-        top: 20px;
-        right: 70px;
-        transition: ease .4s;
-        z-index: 8;
-    }
-    .proma {
-        width: 300px;
-    }
-    .profile p {
-        font-size: 14px;
-    }
-    
-}
+
 
 .profile-set {
     display: flex;
@@ -301,7 +283,6 @@ main {
 
 .proma {
     margin: 0 30px;
-    margin-top: 10px;
 }
 
 .profile h2 {
@@ -321,8 +302,10 @@ main {
     display: block;
     border-radius: 5px;
     object-fit: cover;
-    filter: grayscale(60%);
+    filter: grayscale(100%);
 }
+
+
 
 #loading {
     display: grid;
@@ -379,104 +362,12 @@ main {
     }
   }
 
-.card-explain {
-    font-family: 'Hannari', serif;
-    text-align: center;
-    margin-top: 10px;
-    pointer-events: none;
-}  
-
-.card-contents {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-.card {
-    border-radius: 5px;
-    width: 280px;
-    height: 280px;
-    padding: 10px;
-    margin: 15px;
-    object-fit: cover;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    overflow: hidden; /* 子要素がカードの外に出ないようにする */
-    
-}
-
-.production1 {
-    background-image: url("img/wellb-fes.jpg");
-    background-size: 280px;
-} 
-.production2 {
-    background-image: url("img/iniad-pr.jpg");
-    background-size: 280px;
-}
-.production3 {
-    background-image: url("img/package-design.jpg");
-    background-size: 280px;
-    background-position: 0;
-}
-.production4 {
-    background-image: url("img/weather-site.jpg");
-    background-size: 360px;
-    background-position: -40px 0;
-}
-.production5 {
-    background-image: url("img/national-flag.jpg");
-    background-size: 280px;
-    background-position: 0 20px;
-}
-.production6 {
-    background-image: url("img/tuitui-pasta.jpg");
-    background-size: 287px;
-}
-.production7 {
-    background-image: url("img/inimon-gacha.jpg");
-    background-size: 355px;
-    background-position: -35px -3px;
-}
-.production8 {
-    background-image: url("img/kakukaku-chat.jpg");
-    background-size: 370px;
-
-}
-.production9 {
-    background-color: #acc4cb;
-    color: #fff;
-}
-
-
-.card .description {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* 半透明の黒背景 */
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out; /* なめらかな表示・非表示 */
-    text-align: center;
-    padding: 40px;
-}
-
-.card p {
-    pointer-events: none;
-    text-wrap: balance;
-}
 
 .skills-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin: 40px 50px;
+    margin: 0 50px;
 }
 
 .category {
@@ -494,7 +385,7 @@ main {
 }
 
 .category-title {
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Hannari', serif;
     text-align: center;
     margin-bottom: 30px;
@@ -660,4 +551,137 @@ footer p {
     font-size: small;
     font-family: "Cormorant", serif;
     margin: 0;
+}
+
+
+.work-set {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px 0 200px 0;
+}
+
+
+.work {
+    font-family: 'Hannari', serif;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+.workma {
+    margin: 0 20px;
+}
+
+.worktitle {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.worktitle p {
+    margin-left: auto;
+    color: #b8b9bc;
+}
+
+.work h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #565759;
+}
+
+.detailer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 13px;
+}
+
+p {
+    margin: 0;
+}
+
+.detailer .detail {
+    color: #565759;
+}
+
+.detailer a {
+    text-decoration: none;
+    background-color: #8ab5bd;
+    color: #ebedeb;
+    border: 1px solid #ebedeb;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: ease .4s;
+    z-index: 8;
+    margin-left: auto;
+}
+
+.detailer a:hover {
+    background-color: #7399a0;
+}
+
+.work-photo img {
+    width: 360px;
+    aspect-ratio: 4/3;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+.video {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.package {
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+
+.package img {
+    width: 50%;
+    margin: 20px 0;
+}
+
+@media (max-width: 1000px) {
+    .homecard {
+        width: 60%;
+        height: 300px;
+    }
+    .proma {
+        width: 300px;
+        margin-top: 40px;
+    }
+    .profile p {
+        font-size: 13px;
+    }
+    .workma {
+        width: 305px;
+        margin-top: 40px;
+    }
+    .work-photo img {
+        width: 305px;
+    }
+    .work h2 {
+        font-size: 16px;
+    }
+    .work p {
+        font-size: 12px;
+    }
+    .detailer {
+        gap: 20px;
+    }
+    .detailer .detail {
+        font-size: 10px;
+    }
+    video {
+        width: 80%;
+    }
+    .package img {
+        width: 80%;
+    }
 }
