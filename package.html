@@ -27,13 +27,40 @@
         </div>
     </header>
     <main class="container-fluid">
-        <div class="package">
-            <img src="package/image1.jpg" alt="image1">
-            <img src="package/image2.jpg" alt="image2">
-            <img src="package/image3.jpg" alt="image3">
-            <img src="package/image4.jpg" alt="image4">
-            <img src="package/image5.jpg" alt="image5">
+        <div class="package-content">
+            <div class="carousel">
+                <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+
+                <div class="carousel-images">
+                    <img src="package/image1.jpg" alt="image1">
+                    <img src="package/image2.jpg" alt="image2">
+                    <img src="package/image3.jpg" alt="image3">
+                    <img src="package/image4.jpg" alt="image4">
+                    <img src="package/image5.jpg" alt="image5">
+                </div>
+
+                <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+                <div class="carousel-indicators">
+                    <span class="indicator" onclick="showSlide(0)"></span>
+                    <span class="indicator" onclick="showSlide(1)"></span>
+                    <span class="indicator" onclick="showSlide(2)"></span>
+                    <span class="indicator" onclick="showSlide(3)"></span>
+                    <span class="indicator" onclick="showSlide(4)"></span>
+                </div>
+            </div>
+
+            
         </div>
+        <div class="sketch">
+            <img src="package/image6.jpg" alt="image6" onclick="openModal(this)">
+            <img src="package/image7.jpg" alt="image7" onclick="openModal(this)">
+            <img src="package/image8.jpg" alt="image8" onclick="openModal(this)">
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01">
+        </div>
+
         <div class="home">
             <a href="index.html"><i class="bi bi-arrow-left-circle-fill"></i>　HOME</a>
         </div>
@@ -62,6 +89,58 @@
             $(".burger").toggleClass("is-active");
             $(".menu").toggleClass("is-active");
         });
+    </script>
+    <script>
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.carousel-images img');
+            const indicators = document.querySelectorAll('.indicator');
+            if (index >= slides.length) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = slides.length - 1;
+            } else {
+                currentIndex = index;
+            }
+            const offset = -currentIndex * 100;
+            document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+            
+            indicators.forEach((indicator, idx) => {
+                if (idx === currentIndex) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentIndex);
+        });
+
+    </script>
+    <script>
+        function openModal(element) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        modal.style.display = "block";
+        modalImg.src = element.src;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+
     </script>
 </body>
 </html>
