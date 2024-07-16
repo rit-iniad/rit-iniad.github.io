@@ -641,6 +641,16 @@ p {
     justify-content: center;
 }
 
+.promotion {
+    display: flex;
+    justify-content: center;
+}
+
+.promotion img {
+    max-width: 500px;
+    width: 80%;
+}
+
 .carousel {
     position: relative;
     width: 80%;
