@@ -302,7 +302,6 @@ main {
     display: block;
     border-radius: 5px;
     object-fit: cover;
-    filter: grayscale(100%);
 }
 
 
